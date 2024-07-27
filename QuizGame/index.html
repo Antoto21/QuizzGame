@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Game</h1>
+        <div id="menu-container">
+            <input type="text" id="search-input" placeholder="Rechercher un thème">
+            <div class="grid-container">
+                <button onclick="loadTheme('amidon')">Amidon</button>
+                <button onclick="loadTheme('beurre')">Beurre</button>
+                <button onclick="loadTheme('ble')">Blé</button>
+                <button onclick="loadTheme('creme')">Crème</button>
+                <button onclick="loadTheme('farine')">Farine</button>
+                <button onclick="loadTheme('farinesSansGluten')">Farines Sans Gluten</button>
+                <button onclick="loadTheme('fermentation')">Fermentation</button>
+                <button onclick="loadTheme('glucose')">Glucose</button>
+                <button onclick="loadTheme('huiles')">Huiles</button>
+                <button onclick="loadTheme('lait')">Lait</button>
+                <button onclick="loadTheme('levures')">Levures</button>
+                <button onclick="loadTheme('margarine')">Margarine</button>
+                <button onclick="loadTheme('oeufs')">Oeufs</button>
+                <button onclick="loadTheme('fruits')">Fruits</button>
+                <button onclick="loadTheme('sel')">Sel</button>
+                <button onclick="loadTheme('eau')">Eau</button>
+                <button onclick="loadTheme('cacao')">Cacao</button>
+                <button onclick="loadTheme('derivesCacao')">Dérivés du cacao</button>
+                <button onclick="startRandomQuiz()">Mode Aléatoire</button>
+            </div>
+            <button id="back-to-menu" style="display: none;" onclick="backToMenu()">Retour au menu</button>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="question-container">
+                <p id="theme"></p>
+                <h2 id="question">Question Text</h2>
+                <div class="btn-container">
+                    <button class="answer-btn" id="btn1">Answer 1</button>
+                    <button class="answer-btn" id="btn2">Answer 2</button>
+                    <button class="answer-btn" id="btn3">Answer 3</button>
+                    <button class="answer-btn" id="btn4">Answer 4</button>
+                </div>
+            </div>
+            <div id="feedback-container">
+                <p id="feedback"></p>
+            </div>
+            <div id="score-container">
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+        <footer>
+            <p>Created by PAUTY Antonin</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
